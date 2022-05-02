@@ -133,7 +133,9 @@ header {
 	/* border: 1px solid red; */
 	border: none;
 }
-
+.search-bar input:focus{ 
+	outline: none;
+}
 .search-btns {
 	margin-top: 20px;
 	align-items: center;
@@ -230,5 +232,22 @@ footer {
 	text-decoration: underline;
 	cursor: pointer;
 }
+/* Mobile and Tablet */
+@media only screen and (max-width: 650px) {
+	/* search bar */
+	.search-bar{
+		width: 90%;
+	}
+	/* footer */
+	footer {
+		height: 150px;
+	}
+	.upper-footer {
+		height: 50px;
+	}
+	.lower-footer {
+		height: 100px;
+		flex-direction: column;
+	}
 
-@media only screen and (max-width)
+}

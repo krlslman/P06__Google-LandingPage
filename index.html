@@ -8,9 +8,11 @@
 	<link rel="icon" href="./images/favicon.jpg">
 	<link rel="stylesheet" href="./style.css">
 	<script src="https://kit.fontawesome.com/bf8c2ea383.js" crossorigin="anonymous"></script></script>
+	<script defer src="./main.js"></script>
+	<!-- "defer" prevents the javascrips referring to the dom elements before they are loaded -->
 </head>
 <body>
-	<!-- Header -->
+	<!-- Header --> 
 	<header>
 		<nav class="navbar">
 			<ul>
@@ -45,7 +47,7 @@
 			<img src="./images/logo.jpg" alt="Google Logo Image" class="logo-img" width="300px">
 			<div class="search-bar">
 				<i class="fa-solid fa-magnifying-glass"></i>
-				<input type="text" class="search-inputbox">
+				<input id="search-input" type="text" class="search-inputbox">
 				<i class="fa-solid fa-keyboard"></i>
 				<i class="fa-solid fa-microphone"></i>
 			</div>
