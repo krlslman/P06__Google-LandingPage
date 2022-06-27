@@ -26,8 +26,8 @@ const search = () => {
 
 }
 
-//! -------------------
-// Search by voice
+//! -----------update--------
+//! Search by voice
 function speecRecognition() {
     let recognition = new webkitSpeechRecognition();
     recognition.lang = 'en-US';
@@ -84,36 +84,36 @@ document.querySelectorAll('.lucky-search-btn').forEach(button => {
     }
 )});
 
-// App menu click reveal event
-document.querySelector('#menu-icon').addEventListener("click", function () {
-    document.querySelector('.apps').style.visibility = "visible";
-    document.querySelector('.apps').style.height = "100%";
-    document.querySelector('.right-side li:nth-child(3)').setAttribute("aria-expanded", "true");
-}); 
+//! App menu click reveal event
+// document.querySelector('#menu-icon').addEventListener("click", function () {
+//     document.querySelector('.apps').style.visibility = "visible";
+//     document.querySelector('.apps').style.height = "100%";
+//     document.querySelector('.right-side li:nth-child(3)').setAttribute("aria-expanded", "true");
+// }); 
 
 
-// App menu click hide event
-document.addEventListener("mouseup", function(e) {
-    let box = document.querySelector('.apps');
-    if (e.target != box && e.target.parentNode != box) {
-    document.querySelector('.apps').style.visibility = "hidden";
-    document.querySelector('.apps').style.height = "0px";
-    document.querySelector('.right-side li:nth-child(3)').setAttribute("aria-expanded", "false");
-}});
+//! App menu click hide event
+// document.addEventListener("mouseup", function(e) {
+//     let box = document.querySelector('.apps');
+//     if (e.target != box && e.target.parentNode != box) {
+//     document.querySelector('.apps').style.visibility = "hidden";
+//     document.querySelector('.apps').style.height = "0px";
+//     document.querySelector('.right-side li:nth-child(3)').setAttribute("aria-expanded", "false");
+// }});
 
 
-// Google Search suggestions fetch function
-let getJSON = function(url, callback) {
-    let xhr = new XMLHttpRequest();
-    xhr.open('GET', url, true);
-    xhr.responseType = 'json';
-    xhr.onload = function() {
-        let status = xhr.status;
-        if (status == 200) {
-            callback(null, xhr.response);
-        } else {
-            callback(status, xhr.response);
-        }
-    };
-    xhr.send();
-};
+//! Google Search suggestions fetch function
+// let getJSON = function(url, callback) {
+//     let xhr = new XMLHttpRequest();
+//     xhr.open('GET', url, true);
+//     xhr.responseType = 'json';
+//     xhr.onload = function() {
+//         let status = xhr.status;
+//         if (status == 200) {
+//             callback(null, xhr.response);
+//         } else {
+//             callback(status, xhr.response);
+//         }
+//     };
+//     xhr.send();
+// };
